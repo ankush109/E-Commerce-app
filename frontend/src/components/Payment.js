@@ -27,7 +27,7 @@ function Payments() {
 			return
 		}
 
-		const data = await fetch('http://localhost:1337/razorpay', { method: 'POST' }).then((t) =>
+		const data = await fetch('https://myank69.herokuapp.com', { method: 'POST' }).then((t) =>
 			t.json()
 		)
 

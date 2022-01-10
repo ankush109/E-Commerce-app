@@ -4,16 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development && node index.js",
+    "start-prod": "set NODE_ENV=production && node index.js"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+ 
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "heroku": "^7.33.3",
     "razorpay": "^2.8.0",
     "shortid": "^2.2.16"
+  },
+  "engines":{
+    "node":"14.17.6"
   }
 }
