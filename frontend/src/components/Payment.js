@@ -27,7 +27,7 @@ function Payments() {
 			return
 		}
 
-		const data = await fetch('https://myank69.herokuapp.com', { method: 'POST' }).then((t) =>
+		const data = await fetch('http://localhost:1337/razorpay', { method: 'POST' }).then((t) =>
 			t.json()
 		)
 
@@ -75,8 +75,8 @@ function Payments() {
                     </div>
                     <div className='payment_Address'>
                         <p>{user?.email}</p>
-                        <p>1337 GONGOTRI APARTMENT,Near Ruby Hospital ,KASBA kolkata-700107</p>
-                        <p>kolkata,West Bengal</p>
+                        <p>123 react lane</p>
+                        <p>Los angelos,CA</p>
                     </div>
                 </div>
                 <div className='payment_section'>
@@ -100,8 +100,8 @@ function Payments() {
                     <div className='payment_title'>
                         <h3>Payment Method</h3>
                     </div>
-                    <div >
-                    <button className='but' onClick={displayRazorpay}>PAY NOW</button>
+                    <div className='button'>
+                    <button onClick={displayRazorpay}>PAY NOW</button>
                     </div>
                 </div>
                 <div className='note'>

@@ -41,4 +41,6 @@ app.post('/razorpay', async (req, res) => {
 		console.log(error)
 	}
 })
-app.listen(process.env.PORT);
+app.listen("1337",()=>{
+	console.log("hola");
+});
