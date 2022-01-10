@@ -1,0 +1,14 @@
+
+.title{
+    align-items: center;
+   color: blue;
+}
+.body {
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.body >h3{
+    color: red;
+}
